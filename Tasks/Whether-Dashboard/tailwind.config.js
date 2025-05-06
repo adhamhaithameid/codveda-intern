@@ -9,6 +9,7 @@ export default {
         background: "#111014",
         primary_text:"#e7e7e7",
         secondary_text:"#eeeeee",
+        third_text:"#7b7a7f",
       },
     },
   },
