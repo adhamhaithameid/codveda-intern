@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Datatabs from "./components/Datatabs";
 import ForecastStripUI from "./components/ForecastStrip";
 import Rain from "./components/Rain";
+import Overview from "./components/overview";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Datatabs />
       <ForecastStripUI />
       <Rain />
+      <Overview />
     </div>
   );
 }

@@ -28,7 +28,7 @@ export default function Rain() {
             absolute 
             left-8 
             px-2 
-            text-lg font-medium
+            text-base text-secondary_text font-medium
             -mt-5
           "
         >

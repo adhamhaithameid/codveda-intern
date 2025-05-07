@@ -11,7 +11,7 @@ function Datatabs() {
         <span className="text-base text-third_text font-light">Tommorow</span>
         </button>
         <button className="relative m-5 -ml-1 mt-20 items-center justify-center flex">
-        <span className="text-base text-secondary_text font-medium">Next 7Days</span>
+        <span className="text-base text-secondary_text font-medium">Next 7 Days</span>
         </button>
       </div>
 

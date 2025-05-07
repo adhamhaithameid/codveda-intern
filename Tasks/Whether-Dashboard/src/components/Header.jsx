@@ -24,14 +24,14 @@ function Header() {
 
       {/* Center: Search bar */}
       <div className="flex absolute top-3 left-1/2 -translate-x-1/2">
-        <div className=" w-[32rem] h-[3rem] focus-within:outline-1 focus-within:outline focus-within:outline-white bg-button_dark rounded-full items-center flex p-3 gap-3 ease-in-out duration-100">
+        <button className=" w-[32rem] h-[3rem] focus-within:outline-1 focus-within:outline focus-within:outline-white bg-button_dark rounded-full items-center flex p-3 gap-3 ease-in-out duration-100">
           <IoSearch className="text-2xl text-white" />
           <input
             type="text"
             placeholder="Search City"
             className="flex-1 bg-transparent outline-none text-base placeholder-secondary_text text-secondary_text"
           />
-        </div>
+        </button>
       </div>
 
       {/* Right group: user avatar */}
@@ -45,3 +45,5 @@ function Header() {
 }
 
 export default Header;
+
+
