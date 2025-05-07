@@ -21,21 +21,22 @@ export default function Rain() {
   ];
 
   return (
-    <div className="relative w-screen bg-background">
-      <div className="absolute right-6 top-16 w-80 mt-5 rounded-2xl p-4 text-white">
+    <div className="absolute w-screen bg-background">
+      <div className="absolute right-6 top-20 w-80 rounded-2xl p-4 text-white">
         <h3
           className="
             absolute 
             left-8 
             px-2 
             text-base text-secondary_text font-medium
-            -mt-5
+            -top-12
+            -mt-3
           "
         >
           Chance Of Rain
         </h3>
 
-        <div className="mt-10 h-40">
+        <div className="top-10 h-40 flex-shrink-0">
           <ResponsiveContainer width="100%" height="100%">
             <ComposedChart data={data} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
               <CartesianGrid vertical={false} stroke="#333" strokeDasharray="3 3" />
@@ -47,7 +48,7 @@ export default function Rain() {
                 tick={{ fill: '#888', fontSize: 10 }}
                 tickFormatter={v => v===100?'Rainy':v===50?'Sunny':v===0?'Heavy':''}
               />
-              <Bar dataKey="value" barSize={6} fill="rgba(255,255,255,0.5)" />
+              <Bar dataKey="value" barSize={6} fill="#fff" />
               <Line
                 type="monotone" dataKey="value"
                 stroke="#60A5FA" strokeWidth={2}

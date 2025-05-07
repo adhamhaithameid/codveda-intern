@@ -9,7 +9,7 @@ function Overview() {
     <div className="bg-background">
     {/* Title */}
       <div className="flex absolute top-7 left-5">
-        <div className="relative m-5 mt-72 items-center justify-center flex">
+        <div className="relative ml-5 top-72 items-center justify-center flex">
           <span className="text-base text-secondary_text font-medium">
             Today's Overview
           </span>
@@ -17,7 +17,7 @@ function Overview() {
       </div>
 
     {/* Wind Status Card */}
-    <div className="absolute bg-button_dark m-8 mb-60 bottom-0 rounded-2xl p-4 text-white w-64 h-52">
+    <div className="absolute bg-button_dark ml-8  bottom-60 rounded-2xl p-4 text-white w-64 h-52">
         <div className="absolute top-4 left-4 w-56">
             <span className="text-base font-medium">Wind Status</span>
         </div>
@@ -26,7 +26,7 @@ function Overview() {
             {windData.map((val, i) => (
             <div
                 key={i}
-                className="w-1 rounded-full bg-gradient-to-t from-[rgba(255,255,255,0.5)] to-[#60A5FA]"
+                className="w-1 rounded-full bg-gradient-to-t from-button_dark to-[#fff]"
               style={{ height: `${(val / max) * 100}%` }}
             />
             ))}
