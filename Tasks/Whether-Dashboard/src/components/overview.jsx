@@ -2,7 +2,7 @@ import React from 'react';
 
 function Overview() {
   // ← 1) add your sample data (replace with real values)
-  const windData = [2, 4, 6, 8, 10, 12, 11, 9, 7, 5, 3];
+  const windData = [2, 3, 4, 6, 7, 8, 10, 12, 13, 11, 9, 8, 7, 5, 3];
   const max = Math.max(...windData);
 
   return (
