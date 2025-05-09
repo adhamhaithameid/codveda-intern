@@ -5,6 +5,7 @@ import Rain from "./components/Rain";
 import Overview from "./components/overview";
 import HeroCard from "./components/hero";
 import Suggest from "./components/suggest";
+import axios from 'axios';
 
 function App() {
 
