@@ -25,7 +25,7 @@ function Overview() {
   return (
   <div className="bg-background">
     {/* Title */}
-      <div className="flex absolute top-7 left-5">
+      <div className="flex absolute top-6 left-5">
         <div className="relative ml-5 top-72 items-center justify-center flex">
           <span className="text-base text-secondary_text font-medium">
             Today's Overview
@@ -36,7 +36,7 @@ function Overview() {
 
 
     {/* Wind Status Card */}
-    <div className="absolute bg-button_dark ml-8  bottom-60 rounded-2xl p-4 text-white w-64 h-52">
+    <div className="absolute bg-button_dark ml-8 bottom-64 rounded-2xl p-4 text-white w-64 h-52 transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
         <div className="absolute top-4 left-4 w-56">
             <span className="text-base font-medium">Wind Status</span>
         </div>
@@ -72,7 +72,7 @@ function Overview() {
 
 
     {/* UV Status Card */}
-    <div className="absolute bg-button_dark ml-6 left-72 bottom-60 rounded-2xl p-4 text-white w-64 h-52">
+    <div className="absolute bg-button_dark ml-6 left-72 bottom-64 rounded-2xl p-4 text-white w-64 h-52 transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
       <div className="absolute top-4 left-4 text-base font-medium">
         UV Index
       </div>
@@ -119,7 +119,7 @@ function Overview() {
 
 
     {/* Humadity Status Card */}
-    <div className="absolute bg-button_dark ml-8 bottom-2 rounded-2xl p-4 text-white w-64 h-52">
+    <div className="absolute bg-button_dark ml-8 bottom-5 rounded-2xl p-4 text-white w-64 h-52 transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
       <div>
         <h3 className="text-base font-medium">Humidity</h3>
         <div className="mt-4 flex justify-center">
@@ -139,7 +139,7 @@ function Overview() {
 
 
     {/* Visiblility Status Card */}
-    <div className="absolute bg-button_dark bottom-2 ml-6 left-72 rounded-2xl p-4 text-white w-64 h-52">
+    <div className="absolute bg-button_dark bottom-5 ml-6 left-72 rounded-2xl p-4 text-white w-64 h-52  transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
       <div>
         <h3 className="text-base font-medium">Visiblility</h3>
         <div className="mt-4 flex justify-center">
