@@ -22,14 +22,14 @@ export default function Rain() {
 
   return (
     <div className="absolute w-screen bg-background">
-      <div className="absolute right-6 top-20 w-80 rounded-2xl p-4 text-white">
+      <div className="absolute right-6 top-16 w-80 rounded-2xl p-4 text-white">
         <h3
           className="
             absolute 
             left-8 
             px-2 
             text-base text-secondary_text font-medium
-            -top-12
+            -top-11
             -mt-3
           "
         >
