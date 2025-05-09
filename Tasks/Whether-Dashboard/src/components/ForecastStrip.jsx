@@ -23,10 +23,10 @@ export default function ForecastStripUI() {
   ];
 
   return (
-    <div className="absolute ml-4 top-32 overflow-x-auto px-4 pb-4  bg-background">
+    <div className="absolute left-4 top-32 overflow-x-auto px-4 pb-4 bg-background">
       <div className="flex space-x-8">
         {/* ── Today Card ── */}
-        <div className="min-w-[220px] bg-button_dark rounded-2xl p-4 text-white flex-shrink-0 transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
+        <div className="min-w-64 bg-button_dark rounded-2xl p-4 text-white flex-shrink-0 transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
           <div className="text-sm justify-self-end">{today.time}</div>
           <div className="-mt-6 text-4xl font-semibold">{today.temp}°</div>
           <div className="justify-self-end">{today.icon}</div>

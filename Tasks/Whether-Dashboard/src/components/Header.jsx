@@ -37,13 +37,13 @@ function Header() {
           <input
             type="text"
             placeholder="Search City"
-            className="flex-1 bg-transparent outline-none text-base placeholder-secondary_text text-secondary_text"
+            className="flex-1 bg-transparent outline-none text-base placeholder-secondary_text text-secondary_text "
           />
         </button>
       </div>
 
       {/* Right group: user avatar */}
-      <div className="flex absolute top-0 right-2">
+      <div className="flex absolute top-0 right-12">
           <button className="relative w-[3rem] h-[3rem] bg-button_dark m-3 rounded-full items-center justify-center flex transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
             <FaUser className="text-2xl text-white " />
           </button>

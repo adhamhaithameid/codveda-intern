@@ -3,7 +3,7 @@ import bgImage from '../assets/Blue Pink Yellow Abstract Painting copy.webp';
 
 export default function HeroCard() {
   return (
-    <div className="absolute bottom-5 left-144 ml-4 w-113 h-111 rounded-2xl overflow-hidden shadow-lg">
+    <div className="absolute bottom-5 left-144 ml-4 w-121 h-111 rounded-2xl overflow-hidden shadow-lg">
       {/* Background image */}
       <img
         src={bgImage}

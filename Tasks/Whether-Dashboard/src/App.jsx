@@ -4,6 +4,7 @@ import ForecastStripUI from "./components/ForecastStrip";
 import Rain from "./components/Rain";
 import Overview from "./components/overview";
 import HeroCard from "./components/hero";
+import Suggest from "./components/suggest";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Rain />
       <Overview />
       <HeroCard />
+      <Suggest />
     </div>
   );
 }
