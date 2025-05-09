@@ -2,19 +2,25 @@ import React from 'react';
 import { RadialBarChart, RadialBar, PolarAngleAxis } from 'recharts';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
+import { BsCloud } from "react-icons/bs";
+import { CiDroplet } from "react-icons/ci";
+import { BsCloudHaze2Fill } from "react-icons/bs";
 
 function Overview() {
   // ← 1) add your sample data (replace with real values)
   const windData = [2, 3, 4, 6, 7, 8, 10, 12, 13, 11, 9, 8, 7, 5, 3];
   const max = Math.max(...windData);
 
-
   const uv = 5.5;          
   const maxUV = 12;        
 
-  const data = [
+  const uvdata = [
     { value: uv, fill: '#60A5FA' },
   ];
+
+  const humidity = 84;
+
+  const Visiblility = 4;
 
   return (
   <div className="bg-background">
@@ -26,6 +32,8 @@ function Overview() {
           </span>
         </div>
       </div>
+
+
 
     {/* Wind Status Card */}
     <div className="absolute bg-button_dark ml-8  bottom-60 rounded-2xl p-4 text-white w-64 h-52">
@@ -61,8 +69,10 @@ function Overview() {
         </div> */}
     </div>
 
+
+
     {/* UV Status Card */}
-    <div className="absolute bg-button_dark ml-8 left-72 bottom-60 rounded-2xl p-4 text-white w-64 h-52">
+    <div className="absolute bg-button_dark ml-6 left-72 bottom-60 rounded-2xl p-4 text-white w-64 h-52">
       <div className="absolute top-4 left-4 text-base font-medium">
         UV Index
       </div>
@@ -79,7 +89,7 @@ function Overview() {
             barSize={10}
             startAngle={180}
             endAngle={0}
-            data={data}
+            data={uvdata}
           >
             <PolarAngleAxis
               type="number"
@@ -106,6 +116,42 @@ function Overview() {
       </div>
     </div>
 
+
+
+    {/* Humadity Status Card */}
+    <div className="absolute bg-button_dark ml-8 bottom-2 rounded-2xl p-4 text-white w-64 h-52">
+      <div>
+        <h3 className="text-base font-medium">Humidity</h3>
+        <div className="mt-4 flex justify-center">
+          <BsCloud className="size-20 text-[#CBD5E1]" />
+        </div>
+        <div className="absolute top-12 left-36 flex justify-center">
+          <CiDroplet className="size-8 text-[#CBD5E1]" />
+        </div>
+      </div>
+
+      <div className="absolute bottom-4 left-0 w-full text-center text-2xl font-semibold">
+          {humidity.toFixed(1)} 
+          <span className='text-sm bottom-0'>%</span>
+      </div>
+    </div>
+
+
+
+    {/* Visiblility Status Card */}
+    <div className="absolute bg-button_dark bottom-2 ml-6 left-72 rounded-2xl p-4 text-white w-64 h-52">
+      <div>
+        <h3 className="text-base font-medium">Visiblility</h3>
+        <div className="mt-4 flex justify-center">
+          <BsCloudHaze2Fill className="size-20 text-[#CBD5E1]" />
+        </div>
+      </div>
+
+      <div className="absolute bottom-4 left-0 w-full text-center text-2xl font-semibold">
+          {Visiblility.toFixed(1)} 
+          <span className='text-sm bottom-0'>km</span>
+      </div>
+    </div>
 
   </div>
   );
