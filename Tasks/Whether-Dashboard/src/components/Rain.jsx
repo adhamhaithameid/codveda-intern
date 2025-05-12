@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ResponsiveContainer,
   ComposedChart,
@@ -35,7 +34,7 @@ export default function Rain() {
           Chance Of Rain
         </h3>
 
-        <div className="top-10 h-40 flex-shrink-0">
+        <div className="top-10 h-40 flex-shrink-0 w-80">
           <ResponsiveContainer width="100%" height="100%">
             <ComposedChart
               data={data}

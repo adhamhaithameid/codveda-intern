@@ -7,8 +7,7 @@ import { IoSearch } from "react-icons/io5";
 function Header() {
   return (
     <div className="relative z-50 bg-background">
-
-    {/* Left group: notifications, Dark mode toggle, location */}
+      {/* Left group: notifications, Dark mode toggle, location */}
       <div className="flex relative top-0 left-5 w-fit">
         <button className="z-100 relative w-[3rem] h-[3rem] bg-button_dark m-3 rounded-full items-center justify-center flex transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
           <IoMdNotificationsOutline className="text-2xl text-white" />
@@ -24,7 +23,8 @@ function Header() {
 
       {/* Center: Search bar */}
       <div className="flex absolute top-3 left-1/2 -translate-x-1/2">
-        <button className={`
+        <button
+          className={`
                 w-[28rem] h-[3rem]
                 bg-button_dark rounded-full flex items-center p-3 gap-3
 
@@ -32,7 +32,8 @@ function Header() {
                 hover:shadow-lg hover:brightness-110
 
                 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-white
-              `}>
+              `}
+        >
           <IoSearch className="text-2xl text-white" />
           <input
             type="text"
@@ -44,14 +45,12 @@ function Header() {
 
       {/* Right group: user avatar */}
       <div className="flex absolute top-0 right-12">
-          <button className="relative w-[3rem] h-[3rem] bg-button_dark m-3 rounded-full items-center justify-center flex transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
-            <FaUser className="text-2xl text-white " />
-          </button>
+        <button className="relative w-[3rem] h-[3rem] bg-button_dark m-3 rounded-full items-center justify-center flex transition duration-300 ease-in-out transform hover:shadow-lg hover:brightness-110">
+          <FaUser className="text-2xl text-white " />
+        </button>
       </div>
     </div>
   );
 }
 
 export default Header;
-
-
